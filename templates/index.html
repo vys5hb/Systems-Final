@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+  <div class="col-md-4">
+    <div class="card bg-secondary mb-4 shadow-sm">
+      <div class="card-header">Upload a new image</div>
+      <div class="card-body">
+        <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+          <div class="mb-3">
+            <input class="form-control" type="file" name="image" required>
+          </div>
+          <button type="submit" class="btn btn-light w-100">Upload</button>
+        </form>
+        <small class="text-muted d-block mt-2">
+          Allowed: .png, .jpg, .jpeg, .gif (max 10 MB)
+        </small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <h4 class="mb-3">Stored Images</h4>
+    {% if images %}
+      <div class="row g-3">
+        {% for img in images|reverse %}
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-secondary h-100 shadow-sm">
+            <img src="{{ url_for('serve_image', filename=img.filename) }}"
+                 class="card-img-top img-fluid"
+                 alt="{{ img.filename }}">
+            <div class="card-body">
+              <h6 class="card-title text-truncate" title="{{ img.filename }}">
+                {{ img.filename }}
+              </h6>
+              <p class="card-text">
+                {{ img.width }}×{{ img.height }} • {{ (img.size_bytes/1024)|round(1) }} KB<br>
+                {{ img.format }} • Uploaded: {{ img.uploaded_at[:19].replace('T', ' ') }}
+              </p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="text-muted">No images stored yet. Upload one to get started.</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
+

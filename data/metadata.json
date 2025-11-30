@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "1764484944110521514_IMG_88D653DD-1B11-47D4-A810-5F968E22B5D8.JPEG",
+    "stored_path": "/Users/ethanooi/Documents/Systems/Final/Systems-Final/data/images/1764484944110521514_IMG_88D653DD-1B11-47D4-A810-5F968E22B5D8.JPEG",
+    "size_bytes": 4379033,
+    "width": 4032,
+    "height": 3024,
+    "format": "JPEG",
+    "sha256": "dfd38d944874413cc532bb43f458039f907219b4a8588d9fdaa880f2437324a9",
+    "uploaded_at": "2025-11-30T06:48:32.921612Z"
+  },
+  {
+    "filename": "1764484944110521514_IMG_4316.jpg",
+    "stored_path": "/Users/ethanooi/Documents/Systems/Final/Systems-Final/data/images/1764484944110521514_IMG_4316.jpg",
+    "size_bytes": 4898985,
+    "width": 5712,
+    "height": 4284,
+    "format": "MPO",
+    "sha256": "753253df8f4dd3a40322163d5d76d6e6b50b0ff6e2abf0f2721c816c017b41d2",
+    "uploaded_at": "2025-11-30T06:48:52.275055Z"
+  },
+  {
+    "filename": "1764485591109027001_IMG_4317.jpg",
+    "stored_path": "/app/data/images/1764485591109027001_IMG_4317.jpg",
+    "size_bytes": 4752376,
+    "width": 5712,
+    "height": 4284,
+    "format": "MPO",
+    "sha256": "5c381228240dfe5bb0028263a1e2ff2d1ad95de689bb56f4a60a5546bf5d4d91",
+    "uploaded_at": "2025-11-30T06:53:40.968953Z"
+  },
+  {
+    "filename": "1764485696484564009_IMG_4316.jpg",
+    "stored_path": "/app/data/images/1764485696484564009_IMG_4316.jpg",
+    "size_bytes": 4898985,
+    "width": 5712,
+    "height": 4284,
+    "format": "MPO",
+    "sha256": "753253df8f4dd3a40322163d5d76d6e6b50b0ff6e2abf0f2721c816c017b41d2",
+    "uploaded_at": "2025-11-30T06:55:12.691767Z"
+  }
+]

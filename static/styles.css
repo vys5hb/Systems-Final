@@ -1,0 +1,9 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.card-img-top {
+  object-fit: cover;
+  max-height: 200px;
+}
+
