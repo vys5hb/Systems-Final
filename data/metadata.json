@@ -38,5 +38,25 @@
     "format": "MPO",
     "sha256": "753253df8f4dd3a40322163d5d76d6e6b50b0ff6e2abf0f2721c816c017b41d2",
     "uploaded_at": "2025-11-30T06:55:12.691767Z"
+  },
+  {
+    "filename": "1764645119104283603_final_animation.gif",
+    "stored_path": "/Users/ethanooi/Documents/Systems/Final/Systems-Final/data/images/1764645119104283603_final_animation.gif",
+    "size_bytes": 3964496,
+    "width": 2000,
+    "height": 1050,
+    "format": "GIF",
+    "sha256": "b435cf15ea407460364394fb21bab6cb0f62566a6850ca3d9f2924cfc29b55b2",
+    "uploaded_at": "2025-12-02T03:12:38.291715Z"
+  },
+  {
+    "filename": "1764645878422321005_fouls.png",
+    "stored_path": "/app/data/images/1764645878422321005_fouls.png",
+    "size_bytes": 100443,
+    "width": 1900,
+    "height": 1058,
+    "format": "PNG",
+    "sha256": "9a72a432967a0bcb3ceb5ddd0759d284026c4730caae1984beb4980d2d95807c",
+    "uploaded_at": "2025-12-02T03:45:31.453756Z"
   }
 ]
