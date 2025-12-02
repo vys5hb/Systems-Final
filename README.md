@@ -30,7 +30,6 @@ Ops: Each upload event is logged in app.log. Each entry includes a timestamp and
 
 ![](assets/website2.png)
 ![](assets/website3.png)
-![](assets/website4.png)
 ![](assets/website5.png)
 
 ## 6) What's Next
