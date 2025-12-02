@@ -3,15 +3,12 @@ import hashlib
 from pathlib import Path
 from datetime import datetime
 from PIL import Image
-
 from .config import METADATA_PATH
-
 
 def ensure_metadata_file():
     METADATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     if not METADATA_PATH.exists():
         METADATA_PATH.write_text("[]", encoding="utf-8")
-
 
 def load_metadata():
     ensure_metadata_file()
@@ -20,10 +17,8 @@ def load_metadata():
     except json.JSONDecodeError:
         return []
 
-
 def save_metadata(entries):
     METADATA_PATH.write_text(json.dumps(entries, indent=2), encoding="utf-8")
-
 
 def compute_file_hash(path: Path, chunk_size: int = 8192) -> str:
     hasher = hashlib.sha256()
@@ -32,13 +27,11 @@ def compute_file_hash(path: Path, chunk_size: int = 8192) -> str:
             hasher.update(chunk)
     return hasher.hexdigest()
 
-
 def extract_image_metadata(file_path: Path) -> dict:
     """Extract basic metadata from the stored image."""
     with Image.open(file_path) as img:
         width, height = img.size
         format_ = img.format
-
     stats = file_path.stat()
 
     return {
@@ -51,7 +44,6 @@ def extract_image_metadata(file_path: Path) -> dict:
         "sha256": compute_file_hash(file_path),
         "uploaded_at": datetime.utcnow().isoformat() + "Z",
     }
-
 
 def register_image(file_path: Path):
     """Main pipeline step: extract metadata and append to catalog."""
